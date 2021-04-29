@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: husky
+    versions:
+    - 4.3.6
+    - 5.0.9
+    - 5.1.2
+  - dependency-name: "@bazel/buildifier"
+    versions:
+    - 3.5.0
+    - 4.0.0
+  - dependency-name: jasmine
+    versions:
+    - 3.6.4
+  - dependency-name: jasmine-core
+    versions:
+    - 3.6.0
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
